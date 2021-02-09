@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!-- luxe fur -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Chinchilla" or
+		leatherDef="Leather_GuineaPig" or
+		leatherDef="AEXP_Leather_Platypus"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_LuxeFur</leatherDef>
+	</value>
+</Operation>
+
+<!-- heavy fur -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Bluefur" or
+		leatherDef="bantha_hide" or
+		leatherDef="nerf_hide" or
+		leatherDef="wampa_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Heavy</leatherDef>
+	</value>
+</Operation>
+
+<!-- lightleather -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[leatherDef="Leather_Pig"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Light</leatherDef>
+	</value>
+</Operation>
+
+<!-- sturdy leather -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Rhinoceros" or
+		leatherDef="AEXP_Leather_Hippopotamus" or
+		leatherDef="Leather_Night" or
+		leatherDef="reek_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Elephant</leatherDef>
+	</value>
+</Operation>
+
+<!-- longfur pelt -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Dog" or
+		leatherDef="Leather_Fox" or
+		leatherDef="AA_ArcticLion_Leather" or
+		leatherDef="vulptex_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Wolf</leatherDef>
+	</value>
+</Operation>
+
+<!-- shorthair pelt -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Camel" or
+		leatherDef="AEXP_Leather_Lion" or
+		leatherDef="AEXP_Leather_Tiger" or
+		leatherDef="AA_SandLion_Leather"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Panthera</leatherDef>
+	</value>
+</Operation>
+
+<!-- stellar hide -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[leatherDef="Leather_Gallatross"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Thrumbo</leatherDef>
+	</value>
+</Operation>
+
+<!-- chitin -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_IronChitin" or
+		leatherDef="Leather_RaptorPlates"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Chitin</leatherDef>
+	</value>
+</Operation>
+
+<!-- plainleather -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="AEXP_Leather_Wildebeest" or
+		leatherDef="AEXP_Leather_Pinniped"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Plain</leatherDef>
+	</value>
+</Operation>
+
+<!-- lizardskin -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_HeavyLizard" or
+		leatherDef="gizka_skin"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Lizard</leatherDef>
+	</value>
+</Operation>
+
+<!-- thick pelt -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="Leather_Muffalant" or
+		leatherDef="nexu_fur" or
+		leatherDef="tauntaun_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Bear</leatherDef>
+	</value>
+</Operation>
+
+<!-- coarse fur -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[leatherDef="Leather_Rat"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_CoarseFur</leatherDef>
+	</value>
+</Operation>
+
+<!-- birdskin -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[leatherDef="porg_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Bird</leatherDef>
+	</value>
+</Operation>
+
+<!-- thick lizardhide -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef/race[
+		leatherDef="dewback_hide" or
+		leatherDef="acklay_hide" or
+		leatherDef="KraytDragon_hide" or
+		leatherDef="rancor_hide"]/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Dog</leatherDef>
+	</value>
+</Operation>
+
+<!-- Exceptions -->
+
+<!-- heavy fur -->
+<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[
+		defName = "Bison" or
+		defName = "Yak"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Heavy</leatherDef>
+	</value>
+</Operation>
+
+<!-- shorthair pelt -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[
+		defName = "AEXP_Coyote" or
+		defName = "AEXP_Hyena" or
+		defName = "HC_Hyena" or
+		defName = "Dinocrocuta"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Panthera</leatherDef>
+	</value>
+</Operation>
+
+<!-- soft fur -->
+<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[
+		defName = "Monkey" or
+		defName = "YorkshireTerrier" or
+		defName = "Cat" or
+		defName = "Fisher" or
+		defName = "Pika" or
+		defName = "Pallas_cat" or
+		defName = "AEXP_RedPanda" or
+		defName = "AEXP_Koala" or
+		defName = "AEXP_Lemur" or
+		defName = "AEXP_Beagle" or
+		defName = "AEXP_Chihuahua" or
+		defName = "AEXP_Corgi" or
+		defName = "AEXP_FrenchBulldog" or
+		defName = "AEXP_GreatDane" or
+		defName = "AEXP_Pug" or
+		defName = "AEXP_Rottweiler" or
+		defName = "AEXP_Shih-Tzu" or
+		defName = "AEXP_WelshTerrier" or
+		defName = "AEXP_CatAbyssinian" or
+		defName = "AEXP_CatBengal" or
+		defName = "AEXP_CatSomali" or
+		defName = "AEXP_CatPersian" or
+		defName = "AEXP_CatSiamese" or
+		defName = "AEXP_CatMunchkin" or
+		defName = "AEXP_CatBritishShorthair" or
+		defName = "FoxSquirrel" or
+		defName = "HC_Weasel" or
+		defName = "WoW_Animal_Mastiff" or
+		defName = "rtp_RhodesianRidgeback"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_SoftFur</leatherDef>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[contains(@Name,"BaseHare")]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_SoftFur</leatherDef>
+	</value>
+</Operation>
+
+<!-- longfur pelt -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[
+		defName = "Snow_leopard" or
+		defName = "Lynx" or
+		defName = "AEXP_CatMaineCoon" or
+		defName = "AEXP_CatNorwegianForest" or
+		defName = "HC_Snowleopard"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Wolf</leatherDef>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[defName = "AA_ArcticLion"]/comps/li[@Class = "CompProperties_Shearable"]/woolDef</xpath>
+	<value>
+		<woolDef>Leather_Wolf</woolDef>
+	</value>
+</Operation>
+
+<!-- coarse fur -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[
+		defName = "Squirrel" or
+		defName = "Capybara" or
+		defName = "Raccoon" or
+		defName = "Rat" or
+		defName = "AA_DuskRat" or
+		defName = "Josephoartigasia"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_CoarseFur</leatherDef>
+	</value>
+</Operation>
+
+<!-- thick lizardhide -->
+<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[
+		defName = "AA_DecayDrake" or
+		defName = "AA_Lockjaw" or
+		defName = "AA_OvergrownColossus" or
+		defName = "AA_RoughPlatedMonitor"]/race/leatherDef</xpath>
+	<value>
+		<leatherDef>Leather_Dog</leatherDef>
+	</value>
+</Operation>
+
+<!-- Removing leathers -->
+<Operation Class="PatchOperationRemove">
+	<success>Always</success>
+	<xpath>/Defs/ThingDef[
+		defName = "Leather_Camel" or
+		defName = "Leather_GuineaPig" or
+		defName = "Leather_Pig" or
+		defName = "Leather_Rhinoceros" or
+		defName = "Leather_Chinchilla" or
+		defName = "Leather_Bluefur" or
+		defName = "Leather_Fox" or
+		defName = "AA_SandLion_Leather" or
+		defName = "AA_ArcticLion_Leather" or
+		defName = "Leather_IronChitin" or
+		defName = "Leather_Gallatross" or
+		defName = "Leather_RaptorPlates" or
+		defName = "Leather_Night" or
+		defName = "AEXP_Leather_Hippopotamus" or
+		defName = "AEXP_Leather_Wildebeest" or
+		defName = "AEXP_Leather_Platypus" or
+		defName = "AEXP_Leather_Lion" or
+		defName = "AEXP_Leather_Pinniped" or
+		defName = "AEXP_Leather_Tiger" or
+		defName = "Leather_HeavyLizard" or
+		defName = "Leather_Muffalant" or
+		defName = "nexu_fur" or
+		defName = "dewback_hide" or
+		defName = "bantha_hide" or
+		defName = "reek_hide" or
+		defName = "acklay_hide" or
+		defName = "tauntaun_hide" or
+		defName = "KraytDragon_hide" or
+		defName = "nerf_hide" or
+		defName = "gizka_skin" or
+		defName = "porg_hide" or
+		defName = "vulptex_hide" or
+		defName = "wampa_hide" or
+		defName = "rancor_hide"]</xpath>
+</Operation>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Animals</li>
+		<li>StarWars Animal Collection</li>
+	</mods>
+	<nomatch Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Leather_Dog"]</xpath>
+	</nomatch>
+</Operation>
+
+</Patch>
